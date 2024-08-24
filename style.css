@@ -1,0 +1,227 @@
+body {
+    background-color: #FBC1C8;
+    font-family:'Inter';
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-image: url(imagens/fundo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.titulo {
+    font-family: 'Orbitron';
+    font-size: 35px;
+    color: #FCEBED;
+    width: 900px;
+    height: 88px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: none;
+    position: relative;
+}
+
+.nenhumaMensagem {
+    font-family: 'Orbitron';
+    font-size: 20px;
+}
+
+footer {
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+}
+
+.texto {
+    resize: none;
+    background-color: #F9D5D9;
+    border: #F9D5D9;
+    color:#E54F61;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    font-size: 17px;
+}
+
+textarea::placeholder {
+    color: #E54F61;
+    font-size: 17px;
+}
+
+.textoResultado {
+    resize: none;
+    background-color: #F9D5D9;
+    border: #F9D5D9;
+    color: #E54F61;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    font-size: 17px;
+}
+
+
+.painelSuperior {
+    width: 92%;
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 25px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+    background-size: 100% 100%;
+    position: relative;
+    background-color: #F9D5D9;
+}
+
+.painelInferior {
+    width: 92%;
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+    background-size: 100% 100%;
+    position: relative;
+    background-color: #F9D5D9;
+}
+
+.botaoCrip {
+    background-color: #E54F61;
+    border-radius: 7px;
+    border: #E54F61;
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    left: 250px;
+    top: 16px;
+    display: block;
+    transition-duration: 0.4s;
+    font-size: 14px;
+    font-family: 'Orbitron'; 
+    z-index: 1;
+}
+
+.botaoCrip:hover {
+    background-color: #FBC1C8;
+    box-shadow: 0 3px 14px 0 rgba(0,0,0,0.24),0 2px 50px 0 rgba(0,0,0,0.19);
+}
+
+.botaoDescrip {
+    background-color: #FCEBED;
+    border-radius: 7px;
+    border: #FCEBED;
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    right: 250px;
+    top: 16px;
+    display: block;
+    transition-duration: 0.4s;
+    font-size: 14px;
+    font-family: 'Orbitron';
+    z-index: 1;
+}
+
+.botaoDescrip:hover {
+    background-color: #E54F61;
+    box-shadow: 0 3px 14px 0 rgba(0,0,0,0.24),0 2px 50px 0 rgba(0,0,0,0.19);
+}
+
+.retangulo {
+    width: 100%;
+    height: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 198px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0px 0px 24px 24px;
+    background-size: 100% 100%;
+    position: absolute;
+    background-color: #F5BFC5;
+}
+
+.botaoCopiar {
+    background-color: #FBC1C8;
+    border-radius: 7px;
+    border: #FBC1C8;
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    right: 319px;
+    top: 630px;
+    display: block;
+    transition-duration: 0.4s;
+    font-size: 14px;
+    font-family: 'Orbitron';
+}
+
+.botaoCopiar:hover {
+    background-color: #FCEBED;
+    box-shadow: 0 3px 14px 0 rgba(0,0,0,0.24),0 2px 50px 0 rgba(0,0,0,0.19);
+}
+
+.mensagem {
+    position: absolute;
+    left: 429px;
+    top: 70px;
+    display: block;
+    text-align: center;
+}
+
+.imagem1 {
+    position: absolute;
+    left: 170px;
+    top: 33px;
+    display: block;
+}
+
+.imagem2 {
+    position: absolute;
+    right: 170px;
+    top: 33px;
+    display: block;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 1px;
+    display: block;
+    top: 695px;
+    color: #FCEBED;
+}
+
+
+.desenvolvidoPor {
+    color: #E54F61;
+    font-size: 13px;
+}
+
+.logo-github{
+    width: 25px;
+    height: 25px;
+    color: #E54F61;
+}

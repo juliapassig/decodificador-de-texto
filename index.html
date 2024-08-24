@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <title>Decodificador de Texto</title>
+</head>
+
+<body>
+
+<!--cabeçalho-->
+<div class="titulo">
+    <h1>Decodificador de  Texto</h1>
+</div>
+        
+
+
+<!--parte principal da página-->
+    <main>
+
+<!--painel da parte de cima, onde haverá a área de escrita e os botões para criptografar e descriptografar-->
+        <div class="painelSuperior">
+            <div class="textoSuperior">
+                <textarea class="texto" id="texto" placeholder="Digite o seu texto utilizando apenas letras minúsculas e sem acentuação..." cols="120" rows="13" maxlength="1100" required></textarea> 
+            </div>
+            
+    <!--botões de criptografar e descriptografar-->
+            <div class="retangulo">
+                <div class="botoes">
+                <button class="botaoCrip" onclick="criptografarTexto ()">Criptografar</button>
+                <button class="botaoDescrip" onclick="descriptografarTexto ()">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+        
+
+<!--painel inferior onde aparecerá o texto criptografado ou descriptografado-->
+        <div class="painelInferior">
+            <div class="textoInferior">
+                <textarea class="textoResultado" name="textoResultado" id="textoResultado" readonly cols="120" rows="12"></textarea>
+            </div>
+
+        <!--Mensagem que aparece quando o usuário ainda não decodificou nenhum texto-->
+        <div class="imagem1">
+            <img src="imagens/boneca.png" id="imagem1" alt="boneca entrando em um livro" height="170">
+        </div>
+        <div class="imagem2">
+            <img src="imagens/boneca2.png" id="imagem2" alt="boneca entrando em um livro" height="170">
+        </div>
+        <div class="mensagem" id="nenhumaMensagem">
+            <h3 class="nenhumaMensagem"><strong>NENHUMA MENSAGEM ENCONTRADA</strong></h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+            
+        </div>
+
+<!--botão de copiar texto-->
+        <div class="copiar" >
+            <button class="botaoCopiar" id="copiar" onclick="copiarTexto()" >Copiar</button>
+        </div>
+
+    </main>
+
+
+<!--rodapé-->
+    <footer>
+    <div class="tabela">
+        <table>
+            <tr>
+                <td class="icon"><a href="https://github.com/juliapassig" target="_blank"><ion-icon name="logo-github" class="logo-github"></ion-icon></a></td>
+                <td class="desenvolvidoPor">Desenvolvido por Julia da Silva. Imagens de Freepik. Um Challenge de Alura e Oracle Next Education</td>
+            </tr>
+        </table>
+    </div>
+    </footer>
+
+    
+
+    <script src="app.js" defer></script>
+    <script src="interacao/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     
+</body>
+
+</html>
